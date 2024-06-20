@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma Balaguer</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (Includes Bootstrap) -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Firebase Configuration -->
+  <script type="module" src="../js/firebase.js"></script>
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="../index.html#page-top">
+        <img id="logo" src="../assets/white-logo.png" alt="Logo" width="75" height="46">
+        Emma Balaguer
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html#page-top">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#philosophy">Filosofía</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#visit">Visítanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li id="profile" class="nav-item dropdown d-none">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Administrador
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./profile.html">Perfil</a></li>
+              <li><a class="dropdown-item" href="./notifications.html">Notificaciones</a></li>
+              <li><a class="dropdown-item" href="./admin-news.html">Administrar Noticias</a></li>
+              <li><a id="logout" class="dropdown-item" href="#">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="ms-5">
+          <a id="login-btn" class="btn btn-primary">Iniciar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="nm-header">
+    <div class="container px-4 px-lg-5 h-500">
+      <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center h-500">
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold">Noticias</h1>
+          <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">¡Bienvenidos a nuestra sección de noticias educativas! Mantente al día con las
+            últimas novedades, eventos y logros dentro de nuestra comunidad educativa. Aquí encontrarás información
+            relevante y emocionante sobre nuestros estudiantes, profesores, proyectos y actividades.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- News Container -->
+  <section class="news-section container p-4">
+    <div id="news-container">
+      <template id="cardTemplate">
+        <div class="news-card mb-3">
+          <div class="card-header">
+            <img src="" alt="card-image" class="news-card-image" width="600">
+          </div>
+          <div class="news-card-body">
+            <h4 class="card-title"></h4>
+            <p class="content-preview"></p>
+          </div>
+          <div class="news-actions">
+            <a class="show-more" href="#">Ver más...</a>
+            <a class="delete-news d-none" href="#">Eliminar</a>
+          </div>
+          <div class="card-footer">
+            <div class="user">
+              <img src="../assets/avatar.svg" alt="user-image" class="user-image">
+              <div class="user-info">
+                <h6 class="card-author"></h6>
+                <small class="card-date"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-muted">
+        Todos los Derechos Reservados &copy; 2023 - Emma Balaguer de Vallejo
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SimpleLightbox plugin JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <!-- SweetAlert -->
+  <script src="../js/sweetalert.js"></script>
+  <!-- Main JS -->
+  <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
